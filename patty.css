@@ -1,74 +1,72 @@
-body{
-  margin: 0 ;
+body {
+  margin: 0;
   padding: 0;
 }
 
 /* Intro */
-#IntroContainer{
+#IntroContainer {
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-#mainLogo{
+#mainLogo {
   width: 80px;
   position: relative;
   top: 20px;
   left: 20px;
 }
 
-#IntroContainer section{
+#IntroContainer section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-section h1{
+section h1 {
   font-size: 1.8rem;
   margin: 0;
   margin-bottom: 10px;
 }
 
-section h1:first-child{
+section h1:first-child {
   margin-top: 70px;
 }
 
-section img{
+section img {
   width: 90vw;
   margin-top: -50px;
   cursor: pointer;
 }
 
-section p{
+section p {
   font-size: 1rem;
   text-align: center;
-  line-height:25px;
+  line-height: 25px;
   margin-top: 30px;
 }
 
-#container{
-
+#container {
 }
 
-#container section{
+#container section {
   height: 100vh;
   position: relative;
   margin-bottom: 100px;
 }
 
-#container section:nth-child(2) p{
+#container section:nth-child(2) p {
   position: absolute;
   top: 160px;
   width: 100vw;
 }
 
-#logo{
+#logo {
   width: 70px;
   position: absolute;
   top: 70px;
   left: 20px;
 }
-
 
 #mirrorball {
   position: fixed;
@@ -86,78 +84,77 @@ section p{
   z-index: 5;
 }
 
-.top{
+.top {
   width: 60px;
   position: absolute;
   animation: shake 2s;
   animation-iteration-count: infinite;
 }
 
-.top:first-child{
+.top:first-child {
   top: 270px;
   left: 60px;
   animation: shaketop1 2s;
   animation-iteration-count: infinite;
 }
 
-.top:nth-child(2){
+.top:nth-child(2) {
   top: 380px;
   left: 30px;
   animation: shake 1s;
   animation-iteration-count: infinite;
 }
 
-.top:nth-child(3){
+.top:nth-child(3) {
   top: 430px;
   left: 130px;
   animation: shaketop1 2s;
   animation-iteration-count: infinite;
 }
-.top:nth-child(4){
+.top:nth-child(4) {
   top: 300px;
   left: 200px;
   animation: shaketop1 1.5s;
   animation-iteration-count: infinite;
 }
 
-.top:nth-child(5){
+.top:nth-child(5) {
   top: 500px;
   left: 30px;
   animation: shake 1.5s;
   animation-iteration-count: infinite;
 }
 
-.top:nth-child(6){
+.top:nth-child(6) {
   top: 510px;
   left: 200px;
   animation: shake 1s;
   animation-iteration-count: infinite;
 }
-.top:nth-child(7){
+.top:nth-child(7) {
   top: 570px;
   left: 120px;
   animation: shaketop1 3s;
   animation-iteration-count: infinite;
 }
-.top:nth-child(8){
+.top:nth-child(8) {
   top: 290px;
   left: 300px;
   animation: shake2 2s;
   animation-iteration-count: infinite;
 }
-.top:nth-child(9){
+.top:nth-child(9) {
   top: 570px;
   left: 280px;
   animation: shaketop1 2s;
   animation-iteration-count: infinite;
 }
-.top:last-child{
+.top:last-child {
   top: 420px;
   left: 300px;
   animation: shake 2s;
   animation-iteration-count: infinite;
 }
-
 
 @keyframes shaketop1 {
   0% {
@@ -195,74 +192,71 @@ section p{
   }
 }
 
-
 /*---------------------*/
 /* 두번째 페이지 */
 
-
-#container section:nth-child(3) div{
+#container section:nth-child(3) div {
   position: absolute;
   width: 100vw;
   top: 170px;
 }
 
-#container section:nth-child(3) p{
+#container section:nth-child(3) p {
   margin-top: 0;
   margin-bottom: 14px;
   line-height: 20px;
 }
 
-#container section:nth-child(3) strong{
+#container section:nth-child(3) strong {
   font-weight: 600;
 }
 
-
-.medium{
+.medium {
   width: 60px;
   position: absolute;
 }
 
-.medium:first-child{
+.medium:first-child {
   top: 180px;
   left: 60px;
   animation: shaketop1 2s;
   animation-iteration-count: infinite;
 }
 
-.medium:nth-child(2){
+.medium:nth-child(2) {
   top: 300px;
   left: 30px;
   animation: shake 2s;
   animation-iteration-count: infinite;
 }
 
-.medium:nth-child(3){
+.medium:nth-child(3) {
   top: 330px;
   left: 130px;
   animation: shake 1s;
   animation-iteration-count: infinite;
 }
-.medium:nth-child(4){
+.medium:nth-child(4) {
   top: 250px;
   left: 200px;
   animation: shaketop1 2s;
   animation-iteration-count: infinite;
 }
-.medium:last-child{
+.medium:last-child {
   top: 200px;
   left: 300px;
   animation: shake 1.5s;
   animation-iteration-count: infinite;
 }
 
-#container section:nth-child(3) .lastcomment{
+#container section:nth-child(3) .lastcomment {
   position: absolute;
   width: 100vw;
   bottom: 40px;
 }
 
 /* ------------------*/
-#container section:nth-child(4){
+#container section:nth-child(4) {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,34 +265,31 @@ section p{
   font-size: 10px;
 }
 
-#container section:nth-child(4) img{
-    width: 60vw;
+#container section:nth-child(4) img {
+  width: 60vw;
   margin-top: 50px;
 }
 
-#container section:nth-child(4) p{
+#container section:nth-child(4) p {
   margin-top: 40px;
   font-size: 13px;
   line-height: 20px;
-
 }
-
 
 /* -----------------*/
 /* 마지막*/
 
-
-#container section:last-child{
+#container section:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
   font-size: 10px;
-  background-image: url('../assets/land3.png');
+  background-image: url('assets/land3.png');
 }
 
-#container section:last-child #person{
+#container section:last-child #person {
   height: 40vh;
   width: auto;
   margin-top: 0px;
@@ -308,8 +299,6 @@ section p{
   animation: shake2 1.5s;
   animation-iteration-count: infinite;
 }
-
-
 
 #patty {
   animation: shake 0.5s;
@@ -391,7 +380,6 @@ section p{
   }
 }
 
-
 form {
   position: absolute;
   bottom: 80px;
@@ -437,16 +425,15 @@ input {
   animation: none !important;
 }
 
-#resetBtn{
+#resetBtn {
   width: 100px;
   font-size: 10px;
   margin-top: 50px;
 }
 
-
 /* -------------------*/
 /*Congratulation*/
-#congratulation{
+#congratulation {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -454,7 +441,7 @@ input {
   justify-content: center;
 }
 
-#congratulation p{
+#congratulation p {
   margin: 0;
   margin-bottom: 30px;
   line-height: 23px;
