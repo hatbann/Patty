@@ -10,15 +10,41 @@
       href="../assets/pattyfavicon.ico"
       type="image/x-icon"
     />
+
     <title>Congratulation</title>
   </head>
   <body>
+    <img src="assets/Arrow.png" alt="" onclick="goIntro()" class="arrow" />
     <div id="congratulation">
-      <div id="peoplecenter">
-
-      </div>
-      <button id="resetBtn" onclick="goIntro()">처음으로</button>
+      <img
+        src="assets/mirrorball.png"
+        alt=""
+        class="mirrorball"
+        id="mirrorball"
+      />
+      <div id="peoplecenter"></div>
+      <p>진정한 vip는<br />가속화 사회에서도 굳건히 서있는 법을 아는 법</p>
     </div>
     <script src="patty.js"></script>
   </body>
+  <script>
+    const peopelCenter = $('#peoplecenter');
+
+    function printTotal() {
+      const tatal = [];
+      if (store.getCenter() !== null) {
+        total = store.getCenter();
+        console.log(total);
+        for (let i = 0; i < total.length; i++) {
+          const newDiv = document.createElement('div');
+          const newText = document.createTextNode(total[i].center);
+          newDiv.append(newText);
+          newDiv.setAttribute('class', 'centerEl');
+          peopelCenter.append(newDiv);
+        }
+      }
+    }
+
+    printTotal();
+  </script>
 </html>

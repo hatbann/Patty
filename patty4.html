@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="patty.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="patty4">
+      <img
+        src="assets/mirrorball.png"
+        alt=""
+        class="mirrorball"
+        id="mirrorball"
+      />
+      <img src="assets/person.png" alt="" id="person" />
+      <img src="assets/patty.png" class="patty" id="pattyshake" />
+      <form action="">
+        <button
+          type="button"
+          id="pattyBtn"
+          class="disable"
+          disabled
+          onclick="clickBtn()"
+        >
+          당신의 패티(중심점)으로<br />
+          흔들기를 멈추고 굳건히 서보세요
+        </button>
+        <img src="assets/speechbubble.png" alt="" id="speechBubble" />
+        <input
+          type="text"
+          placeholder="입력해주세요"
+          name=""
+          id="patty_input"
+          oninput="inputCheck()"
+        />
+      </form>
+    </section>
+    <img src="assets/Arrow.png" alt="" onclick="goCongrat()" />
+    <script src="patty.js"></script>
+  </body>
+</html>

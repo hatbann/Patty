@@ -2,72 +2,70 @@ const $ = (item) => document.querySelector(item);
 
 const input = $('#patty_input');
 const btn = $('#pattyBtn');
-const patty = $('#patty');
+const patty = $('#pattyshake');
 const person = $('#person');
-const peopelCenter = $('#peoplecenter');
-
 let total = [];
 
-
 const store = {
-  setCenter : (center) => {
+  setCenter: (center) => {
     localStorage.setItem('center', JSON.stringify(center));
   },
-  getCenter : ()=>{
+  getCenter: () => {
     return JSON.parse(localStorage.getItem('center'));
-  }
-}
+  },
+};
 
-
-input.oninput = function () {
+function inputCheck() {
   if (input.value === '') {
     btn.setAttribute('disabled', true);
     btn.classList.remove('able');
     btn.classList.add('disable');
-    btn.innerText = '당신의 패티는?'
+    btn.innerText = '당신의 패티는?';
   } else {
     btn.removeAttribute('disabled');
     btn.classList.remove('disable');
     btn.classList.add('able');
-    btn.innerText = '확인'
+    btn.innerText = '확인';
   }
-};
+}
 
 function clickBtn() {
   let content = input.value;
   patty.classList.add('stop');
   person.classList.add('stop');
   btn.innerText = '중심 잡기 성공';
-  const newCenter = {center : content};
+  const newCenter = { center: content };
 
-  if(store.getCenter() !== null){
+  if (store.getCenter() !== null) {
     total = store.getCenter();
   }
   total.push(newCenter);
   localStorage.setItem('center', JSON.stringify(total));
-  setTimeout(goLastPage,2000);
+  setTimeout(goCongrat, 2000);
 }
 
-function enterPage(){
-  location.replace('./patty.html');
+/* ------------------ 페이지 이동 함수들 -----------------*/
+function goPatty1() {
+  location.replace('./patty1.html');
 }
 
-function goLastPage(){
+function goPatty2() {
+  location.replace('./patty2.html');
+}
+
+function goPatty3() {
+  location.replace('./patty3.html');
+}
+
+function goPatty4() {
+  location.replace('./patty4.html');
+}
+
+function goCongrat() {
   location.replace('./Congratulation.html');
 }
+/* --------------------------------*/
 
-function goIntro(){
+function goIntro() {
   location.replace('./pattyIntro.html');
 }
-
-function printTotal(){
-  if(store.getCenter() !== null){
-    total = store.getCenter();
-    console.log(totalArr);
-    for(let i = 0; i<totalArr.length; i++){
-
-    }
-  }
-}
-
-printTotal();

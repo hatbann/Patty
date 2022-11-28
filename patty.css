@@ -1,22 +1,35 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Intro */
+.arrow {
+  position: fixed;
+  bottom: 30px;
+  left: 320px;
+  z-index: 200;
+}
+
+#mirrorball {
+  position: fixed;
+  width: 65vw;
+  top: 0;
+  left: 16vw;
+  z-index: 60;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+}
+
+/* ----------------------Intro-------------------- */
 #IntroContainer {
   height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-#mainLogo {
-  width: 80px;
-  position: relative;
-  top: 20px;
-  left: 20px;
 }
 
 #IntroContainer section {
@@ -25,58 +38,13 @@ body {
   align-items: center;
 }
 
-section h1 {
-  font-size: 1.8rem;
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-section h1:first-child {
-  margin-top: 70px;
-}
-
-section img {
-  width: 90vw;
-  margin-top: -50px;
-  cursor: pointer;
-}
-
-section p {
-  font-size: 1rem;
-  text-align: center;
-  line-height: 25px;
-  margin-top: 30px;
-}
-
-#container {
-}
-
-#container section {
-  height: 100vh;
-  position: relative;
-  margin-bottom: 100px;
-}
-
-#container section:nth-child(2) p {
-  position: absolute;
-  top: 160px;
+#Intropatty {
   width: 100vw;
 }
 
-#logo {
-  width: 70px;
-  position: absolute;
-  top: 70px;
-  left: 20px;
-}
+/* --------------------------------------*/
 
-#mirrorball {
-  position: fixed;
-  width: 45vw;
-  top: 0;
-  left: 25vw;
-  z-index: 60;
-}
+/*--------------patty 1 ---------------*/
 
 .person {
   width: 160px;
@@ -94,8 +62,8 @@ section p {
 }
 
 .top:first-child {
-  top: 270px;
-  left: 60px;
+  top: 238px;
+  left: 38px;
   animation: shaketop1 2s;
   animation-iteration-count: infinite;
 }
@@ -108,14 +76,14 @@ section p {
 }
 
 .top:nth-child(3) {
-  top: 430px;
+  top: 381px;
   left: 130px;
   animation: shaketop1 2s;
   animation-iteration-count: infinite;
 }
 .top:nth-child(4) {
-  top: 300px;
-  left: 200px;
+  top: 261px;
+  left: 173px;
   animation: shaketop1 1.5s;
   animation-iteration-count: infinite;
 }
@@ -128,25 +96,25 @@ section p {
 }
 
 .top:nth-child(6) {
-  top: 510px;
+  top: 456px;
   left: 200px;
   animation: shake 1s;
   animation-iteration-count: infinite;
 }
 .top:nth-child(7) {
-  top: 570px;
+  top: 534px;
   left: 120px;
   animation: shaketop1 3s;
   animation-iteration-count: infinite;
 }
 .top:nth-child(8) {
-  top: 290px;
-  left: 300px;
+  top: 257px;
+  left: 272px;
   animation: shake2 2s;
   animation-iteration-count: infinite;
 }
 .top:nth-child(9) {
-  top: 570px;
+  top: 540px;
   left: 280px;
   animation: shaketop1 2s;
   animation-iteration-count: infinite;
@@ -194,91 +162,14 @@ section p {
   }
 }
 
-/*---------------------*/
-/* 두번째 페이지 */
+/* ---------------------------*/
 
-#container section:nth-child(3) div {
+/* -------------------patty2-------------*/
+#persons2 img {
   position: absolute;
-  width: 100vw;
-  top: 170px;
+  top: 270px;
 }
 
-#container section:nth-child(3) p {
-  margin-top: 0;
-  margin-bottom: 14px;
-  line-height: 20px;
-}
-
-#container section:nth-child(3) strong {
-  font-weight: 600;
-}
-
-.medium {
-  width: 60px;
-  position: absolute;
-}
-
-.medium:first-child {
-  top: 180px;
-  left: 60px;
-  animation: shaketop1 2s;
-  animation-iteration-count: infinite;
-}
-
-.medium:nth-child(2) {
-  top: 300px;
-  left: 30px;
-  animation: shake 2s;
-  animation-iteration-count: infinite;
-}
-
-.medium:nth-child(3) {
-  top: 330px;
-  left: 130px;
-  animation: shake 1s;
-  animation-iteration-count: infinite;
-}
-.medium:nth-child(4) {
-  top: 250px;
-  left: 200px;
-  animation: shaketop1 2s;
-  animation-iteration-count: infinite;
-}
-.medium:last-child {
-  top: 200px;
-  left: 300px;
-  animation: shake 1.5s;
-  animation-iteration-count: infinite;
-}
-
-#container section:nth-child(3) .lastcomment {
-  position: absolute;
-  width: 100vw;
-  bottom: 40px;
-}
-
-/* ------------------*/
-#container section:nth-child(4) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  font-size: 10px;
-}
-
-#container section:nth-child(4) img {
-  width: 60vw;
-  margin-top: 50px;
-}
-
-#container section:nth-child(4) p {
-  margin-top: 40px;
-  font-size: 13px;
-  line-height: 20px;
-}
-
-/* -----------------*/
 /* 마지막*/
 
 #container section:last-child {
@@ -302,12 +193,97 @@ section p {
   animation-iteration-count: infinite;
 }
 
-#patty {
+/*----------------------------------------*/
+
+/* -----------patty3-----------------------*/
+
+/*----------------------------------------*/
+
+/* -----------patty4-----------------------*/
+#patty4 {
+  position: relative;
+}
+
+#patty4 #mirrorball {
+  width: 50vw;
+  left: 24vw;
+}
+
+#patty4 #person {
+  width: 45vw;
+  position: absolute;
+  left: 100px;
+  top: 147px;
+  z-index: 5;
+  animation: shake2 1s;
+  animation-iteration-count: infinite;
+}
+
+#pattyshake {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
-  position: relative;
-  top: 0px;
+  top: 252px;
+  left: 37px;
   width: 80vw;
+  position: absolute;
+}
+
+form {
+  position: absolute;
+  bottom: 75px;
+  left: 53px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form #speechBubble {
+  position: absolute;
+  width: 65vw;
+  bottom: 50px;
+}
+
+button {
+  width: 220px;
+  background-color: transparent;
+  color: #eefd53;
+  font-weight: 500;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 13px;
+  margin-bottom: 20px;
+  border: none;
+  z-index: 10;
+  position: absolute;
+  bottom: 35px;
+}
+input {
+  width: 260px;
+  height: 40px;
+  border-radius: 13px;
+  text-align: center;
+  color: grey;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.disable {
+  cursor: default;
+  color: rgb(255, 255, 255);
+}
+.able {
+  cursor: pointer;
+  color: #ef811a;
+  font-weight: 600;
+  font-size: 1rem;
+  bottom: 43px;
+}
+
+.stop {
+  animation: none !important;
 }
 
 @keyframes shake {
@@ -382,70 +358,57 @@ section p {
   }
 }
 
-form {
-  position: absolute;
-  bottom: 80px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-button {
-  width: 260px;
-  background-color: black;
-  color: #eefd53;
-  font-weight: 500;
-  font-size: 1rem;
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 13px;
-  margin-bottom: 10px;
-}
-input {
-  width: 260px;
-  height: 40px;
-  border-radius: 13px;
-  text-align: center;
-  color: grey;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.disable {
-  cursor: default;
-  color: rgb(255, 255, 255);
-  background-color: rgb(69, 69, 69);
-}
-.able {
-  cursor: pointer;
-  color: #eefd53;
-  background-color: black;
-}
-
-.stop {
-  animation: none !important;
-}
-
-#resetBtn {
-  width: 100px;
-  font-size: 10px;
-  margin-top: 50px;
-}
-
 /* -------------------*/
 /*Congratulation*/
 #congratulation {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+#congratulation #mirrorball {
+  width: 70vw;
+  left: 14vw;
 }
 
 #congratulation p {
-  margin: 0;
-  margin-bottom: 30px;
-  line-height: 23px;
   text-align: center;
+  position: fixed;
+  bottom: 50px;
+  background-color: #401f0c;
+  color: #ef811a;
+  font-size: 0.7rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+#peoplecenter {
+  position: fixed;
+  top: 280px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  height: 250px;
+  width: 300px;
+  padding: 30px 0;
+}
+
+.centerEl {
+  width: 60vw;
+  border: 1.5px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.centerEl:first-child {
+  margin-top: 180px;
 }
