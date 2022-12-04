@@ -46,6 +46,12 @@ section {
 
 /*--------------patty 1 ---------------*/
 
+#patty1{
+  background-image: url('assets/back2.png');
+  background-size: cover;
+}
+
+
 .person {
   width: 160px;
   position: absolute;
@@ -165,9 +171,39 @@ section {
 /* ---------------------------*/
 
 /* -------------------patty2-------------*/
-#persons2 img {
+#patty2{
+  background-image: url('assets/back2.png');
+  background-size: cover;
+}
+
+
+#collapsePerson
+{
   position: absolute;
-  top: 270px;
+  width: 35vw;
+  bottom: 105px;
+  left: 120px;
+  animation: falldowns forwards;
+  animation-timing-function: cubic-bezier(0.105,1.495, 0.665m 0.325);
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes falldowns{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(90deg) ;
+  }
+}
+
+#patty2 p{
+  position: absolute;
+  bottom: 40px;
+  text-align: center;
+  padding: 0 60px;
+  color: white;
 }
 
 /* 마지막*/
