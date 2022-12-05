@@ -15,6 +15,27 @@ const store = {
   },
 };
 
+$('#star').click(function(e){
+  let star = $('#star');
+  let xBtn = $('#xBtn');
+  let msg = $('#messege');
+
+  star.addClass('transparent');
+  xBtn.removeClass('transparent');
+  msg.removeClass('transparent');
+});
+
+$('#xBtn').click(function(e){
+  let star = $('#star');
+  let xBtn = $('#xBtn');
+  let msg = $('#messege');
+
+  star.removeClass('transparent');
+  xBtn.addClass('transparent');
+  msg.addClass('transparent');
+})
+
+
 function inputCheck() {
   if (input.value === '') {
     btn.setAttribute('disabled', true);

@@ -12,6 +12,35 @@ body {
   z-index: 200;
 }
 
+.transparent {
+  display: none;
+}
+
+#messege{
+  height: 100vh;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+
+#star{
+  width: 7vw;
+  position: fixed;
+  top: 30px;
+  left: 320px;
+  z-index: 500;
+}
+
+#xBtn{
+  width: 7vw;
+  position: absolute;
+  top: 30px;
+  left: 320px;
+  z-index: 200;
+}
+
 #mirrorball {
   position: fixed;
   width: 65vw;
@@ -30,6 +59,9 @@ section {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url('assets/pattyIntroBack.png');
+  background-size: cover;
+position: relative;
 }
 
 #IntroContainer section {
@@ -39,7 +71,18 @@ section {
 }
 
 #Intropatty {
-  width: 100vw;
+  width: 90vw;
+  position: absolute;
+  top: 230px;
+}
+
+#IntroContainer section p{
+  position: absolute;
+  bottom: 70px;
+  color: #FFD42A;
+  font-weight: 800;
+  font-size: 20px;
+  -webkit-text-stroke: 0.8px black;
 }
 
 /* --------------------------------------*/
